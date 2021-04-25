@@ -1,0 +1,320 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@media only screen and (min-width: 768px) {
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 10px;
+	font-family: 'montserrat', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	min-height: 100vh;
+	width: 100%; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* Hero Section */
+#hero{
+	background-image: url(./img/tyy.jpg);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index:1;
+}
+#hero::after{
+	content: '';
+	position: absolute;
+	left:0 ;
+	top:0 ;
+	height:100%;
+	width:100% ;
+	background-color: black;
+	opacity:.7 ;
+	z-index:-1;
+}
+#hero.hero{
+	min-width: 1200px;
+	margin: 0 auto;
+	padding: 0 50px;
+	justify-content: flex-start;
+}
+#hero h1{
+	display: block;
+	width: fit-content;
+	font-size: 4rem;
+	position: relative;
+	color: transparent;
+	animation: text-reveal .5s ease forwards;
+	animation-delay: 1s;
+}
+#hero h1:nth-child(1){
+	animation-delay: 1s;
+}
+#hero h1:nth-child(2){
+	animation-delay: 2s;
+}
+#hero h1:nth-child(3){
+	animation-delay: 3s;
+}
+#hero h1 span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: rgb(170, 13, 65);
+	animation: text-reveal-box 1s ease;
+	animation-delay: .3s;
+}
+#hero h1:nth-child(2) span{
+	animation-delay: 1.5s;
+}
+#hero h1:nth-child(3) span{
+	animation-delay: 2.5s;
+}
+#hero .cta{
+	display: inline-block;
+	padding: 10px 30px;
+	color:rgb(170, 13, 65);
+	background-color: transparent;
+	border: 2px solid rgb(170, 13, 65);
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	margin-top: 30px;
+	transition: .3s ease ;
+	transition-property: background-color,color;
+}
+#hero .cta:hover {
+	color: white;
+	background-color: rgb(170,13,65);
+}
+#sidemenu{
+	width: 200px; 
+	height:100vh ;
+	position: fixed;
+	right:-200px ;
+	top: 0;
+	background-color:rgb(170,13,65);
+	z-index: 2;
+	transition: 0.5s;
+	font-size: 1.5rem;
+}
+nav ul li{
+	list-style: none;
+	margin: 50px 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	color:#fff;
+}
+#btn{
+	width: 50px;
+	height: 50px;
+	background:rgb(170,13,65) ;
+	text-align: center;
+	position: fixed;
+	right:30px;
+	top: 10px;
+	border-radius: 3px;
+	z-index: 3;
+	cursor: pointer;
+}
+#btn img{
+	width:50px ;
+	margin-top:2px ;
+
+}
+
+/*End Hero Section*/
+
+/*sevices section*/
+#services{
+	
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 100px ;
+}
+#services .section-title{
+	font-size: 4rem;
+	font-weight: 300;
+	color:black;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	text-align: center;
+}
+#services .section-title span{
+	color: rgb(170, 13, 65);
+}
+#services .service-top p{
+	font-size: 1.5rem;
+	margin-top: 5px;
+	line-height: 2.5rem ;
+	font-weight:500;
+	letter-spacing:0.5rem ;
+}
+#services .service-button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0px;
+	padding-top: 30px;
+}
+#services .service-button{
+	font-size: 1.5rem;
+	margin-top: 5px;
+	line-height: 3rem ;
+	font-weight:500;
+	letter-spacing:0.25rem ;
+
+}
+#services .service-item p {
+	text-align: left;
+}
+#services .service-item{
+	flex-basis: 80%;
+	display: flex ;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url(./img/555.jpg);
+	background-size: cover;
+	margin: 10px 5%;
+	overflow: hidden;
+}
+/*End services section*/
+/*drawings section*/
+#drawings .section-title{
+	font-size: 4rem;
+	font-weight: 300;
+	color:black;
+	margin-bottom: 100px;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	text-align: center;
+	background-color: rgb(255, 178, 164);
+}
+#drawings .section-title{
+	font-size: 6rem;
+	margin-top: 0;
+	line-height: 5rem ;
+	font-weight:400;
+	letter-spacing:0.2rem;
+}
+#drawings .section-title span{
+	color: rgb(170, 13, 65);
+}
+	
+.gallery img{
+	text-align: center;
+	height: auto;
+	margin-top:200px ;
+	margin-bottom: 20px;
+	margin: 25px;
+	display: grid;
+	position: relative;
+    width: 46%;
+	float: left;
+	border-radius: 10px;
+}
+/*End drawings section*/
+/*contact section*/
+#section-title{
+	font-size: 4rem;
+	font-weight: 400;
+	color:black;
+	margin-bottom: 5px;
+	margin-top: 100px;
+	text-transform: uppercase;
+	letter-spacing: .01rem;
+	text-align: center;
+}
+#section-title span{
+color: rgb(170, 13, 65);
+}
+#contact .contact{
+	flex-direction: column;
+	max-width: 1500px;
+}
+#contact .contact-items{
+	width: 100%;
+	text-align: center;
+	height: auto;
+}
+#contact .contact-item{
+	width: 50%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 50px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 18px 0 #0000002c;
+}
+#contact .icon{
+	width: 70px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	text-align: center;
+}
+#contact .contact-info h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+#contact .contact-info h2 {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	font-weight: 500;
+
+}
+/*End contact section*/
+/*key farmes*/
+@keyframes text-reveal-box{
+	50%{
+		width: 100%;
+		left: 0;
+	}
+	100%{
+		width: 0;
+		left: 100%;
+	}
+}
+@keyframes text-reveal{
+	100%{
+		color: rgb(230, 168, 0);
+	}
+}
+/*end key farmes*/
