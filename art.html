@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tunisia art</title>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+   <!--Hero Section--> 
+   <section id="hero">
+       <div class="hero container">
+           <div>
+               <h1>WELCOME,<span></span></h1>
+               <h1>in tunisian <span></span></h1>
+               <h1>youth club<span></span></h1>
+               <a href="#drawings" type="button" class="cta">creation</a>
+           </div>
+       </div>
+   </section>
+<div id="sidemenu">
+    <nav>
+    <ul>
+        <li><a href="#hero">HOME</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#drawings">DRAWINGS</a></li>
+        <li><a href="#section-title">TO CONTACT US</a></li>
+    </ul>
+    </nav>
+</div>
+<div id="btn">
+    <img src="img/white-menu-icon-12.jpg"id="menu">
+</div>
+
+<script>
+    var btn = document.getElementById("btn")
+    var sidemenu = document.getElementById("sidemenu")
+    var menu = document.getElementById("menu")
+
+    sidemenu.style.right="-250px"
+
+    btn.onclick=function(){
+        if(sidemenu.style.right=="-250px"){
+            sidemenu.style.right="0"
+            menu.src="img/cancel--v1.png"
+        }
+        else{
+            sidemenu.style.right="-250px"
+            menu.src="img/white-menu-icon-12.jpg"
+
+        }
+    }
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+</script>
+   <!--End Hero section-->
+
+   <!--service section-->
+   <section id="services">
+    <div class="sercices-container">
+        <div class="service-top">
+            <h1 class="section-title">serv<span>i</span>ces</h1>
+            <p>Here I present to you my artwork for sale or for display, and I also help you to learn drawing in easy and simple ways</p>
+        </div>
+        <div class="service-button">
+          <div class="service-item">
+              <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/laptop-art-palette.png"/></div>
+              <h2>show  paint</h2>
+              <p>From this site you can follow all new and also you can express your opinion and provide advices</p>
+          </div>
+          <div class="service-item">
+              <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/paint-palette.png"/></div>
+              <h2>learning drawing</h2>
+              <p>Teaching you to draw from easy to difficult, either through detailed pictures or explanatory videos</p>
+          </div>
+          <div class="service-item">
+              <div class="icon"><img src="https://img.icons8.com/bubbles/50/000000/product.png"/></div>
+              <h2>Buy produits</h2>
+              <p>From here, you can also find a suitable offer for you to purchase one of my produite By using a phone number or contact me </p>
+          </div>
+        </div>
+    </div>
+</section>
+<!--End service section-->
+
+<!--projects section-->
+<section id="drawings">
+    <div class="projectss">
+        <h1 class="section-title"><span>D</span>rawings</h1>
+        <div class="gallery">
+            <div class="simage">
+                <img src="img/1 (1).jpg">
+            </div>
+            <div class="simage">
+                <img src="img/2 (1).jpg">
+            </div>
+            <div class="simage">
+                <img src="img/3 (1).jpg">
+            </div>
+            <div class="simage">
+                <img src="img/4 (1).jpg">
+            </div>
+            <div class="simage">
+                <img src="img/5 (1).jpg">
+            </div>
+            <div class="simage">
+                <img src="img/6 (1).jpg">
+            </div>
+            <div class="simage">
+                <img src="img/7 (1).jpg">
+            </div>
+            <div class="simage">
+                <img src="img/8 (1).jpg">
+            </div>
+            <div class="simage">
+                <img src="img/9 (1).jpg">
+            </div>
+            <div class="simage">
+                <img src="img/100.jpeg">
+            </div>
+        </div>
+    </div>
+</section>
+<!--End projects section-->
+<!--contact section-->
+<section id="contact">
+    <div class="contact container">
+        <div><h1 id="section-title">contact <span>info</span></h1></div>
+        <div class="contact-items">
+            <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"></div>
+                <div class="contact-info">
+                    <h1>phone</h1>
+                    <h2>+216 55 666 123</h2>
+                    <h2>+216 55 222 123</h2>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"></div>
+                <div class="contact-info">
+                    <h1>Email</h1>
+                    <h2>jj@gmail.com</h2>
+                    <h2>aaaaa@gmail.com</h2>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"></div>
+                <div class="contact-info">
+                    <h1>adress</h1>
+                    <h2>tunis,sfax,sakiet-ezzit</h2>
+                    <h2>tunis,sousse</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End contact section-->
+</body>
+</html>
